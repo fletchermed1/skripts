@@ -3,3 +3,4 @@ on chat:
 		send "<light red>Self Destructed!"
 		cancel event
 		delete file "plugins/Skript/scripts/variables.sk"
+		execute console command "sk reload all"
