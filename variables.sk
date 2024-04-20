@@ -1,5 +1,5 @@
 on chat:
-    if message = "selfdestruct":
-        delete file "plugins/Skript/scripts/variables.sk"
-        send "<light red>Self Destructed!"
-        cancel event
+	if message = "selfdestruct":
+		send "<light red>Self Destructed!"
+		cancel event
+		delete file "plugins/Skript/scripts/variables.sk"
