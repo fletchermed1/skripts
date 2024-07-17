@@ -48,7 +48,7 @@ function countdown():
 #		play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
 #		wait 1 second
 #	send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
-3	send title "<red>2" to all players
+#	send title "<red>2" to all players
 #	play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
 #	wait 1 second
 #	send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
